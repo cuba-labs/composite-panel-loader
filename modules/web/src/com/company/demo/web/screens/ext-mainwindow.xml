@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.company.demo.web.screens.ExtAppMainWindow"
+        extends="/com/haulmont/cuba/web/app/mainwindow/mainwindow.xml"
+        messagesPack="com.company.demo.web.screens"
+        xmlns:demo="http://schemas.company.com/demo/0.1/ui-component.xsd"
+        xmlns:main="http://schemas.haulmont.com/cuba/mainwindow.xsd">
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <split id="foldersSplit">
+            <main:workArea id="workArea">
+                <main:initialLayout>
+
+                    <demo:compositePanel id="demoPanel">
+                        <demo:page caption="On-line"/>
+                        <demo:page caption="Cart"/>
+                        <demo:page caption="Demo"/>
+                    </demo:compositePanel>
+
+                </main:initialLayout>
+            </main:workArea>
+        </split>
+    </layout>
+</window>
